@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simulador de Caixa Eletrônico</title>
+</head>
+<body>
+    <h1>Simulador de Caixa Eletrônico</h1>
+    
+    <div class="container">
+        <select id="operacao">
+            <option value="consultar">Consultar saldo</option>
+            <option value="sacar">Realizar saque</option>
+            <option value="depositar">Realizar depósito</option>
+        </select>
+
+        <input type="number" id="valor" placeholder="Digite o valor">
+        <button onclick="realizarOperacao()">Realizar operação</button>
+        
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
